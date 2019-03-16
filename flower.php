@@ -1,18 +1,22 @@
-<?php
 
+<?php
 class Rose
 {
-    public $common_name ;
+    public $common_name= 'Rose Honey_Dijon';
     public $botanical_name;
-    public $color ;
+    public $color;
 
     public function facts()
     {
-        echo'Roses are very beautiful flowers</br>';
-        echo $Rose->common_name= '</br>Rose \'Honey_Dijon\'</br>';
-        echo $Rose->botanical_name = '</br>Rosa Grand_flora \'Honey Dijon\'</br>';
-        echo $Rose->color= '</br>Red_and_black</br>';
+        echo 'Roses are very beautiful flowers</br></br>';
+        echo $this->common_name ;
+        echo $this->botanical_name = '</br>botanical_name is Rosa Grand_flora \'Honey Dijon\'</br>';
+        echo $this->color = '</br>colors are Red_and_black</br>';
+
     }
+}
+$Rose = new Rose();
+$Rose->facts();
 
 
     public function symbol()
@@ -37,3 +41,4 @@ $buy = new Rose();
 $buy->buy();
 
 ?>
+
